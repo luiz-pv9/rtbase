@@ -1,7 +1,7 @@
 {
-  "name": "aloweb.v5rt",
+  "name": "rtbase",
   "version": "5.0.0",
-  "description": "Aloweb - v5 real-time",
+  "description": "rtbase - realtime application scaffolding",
   "repository": {
   },
   "dependencies": {

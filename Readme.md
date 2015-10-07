@@ -1,4 +1,4 @@
-aloweb. v5rt
+rtbase
 ============
 
 Projeto real-time experimental para versão 5.0 do aloweb. O objetivo do projeto é uma base de código genérica que facilite funcionalidades em tempo real com boa performance sem aumentar a complexidade de desenvolvimento e manutenção. 
