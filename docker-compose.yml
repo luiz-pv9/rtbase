@@ -1,0 +1,26 @@
+---
+# O container 'node' contém node.js, npm e alguns módulos globais para auxiliar
+# o desenvolvimento (como gulp e phantomjs). Os containers 'redis' e 'rethinkdb'
+# são linkados a esse container.
+node:
+  build: ./docker/node
+  volumes:
+    - .:/app
+  ports:
+    - "3000:80"
+  links:
+    - redis
+    - rethinkdb
+
+# O container 'redis' contém o banco de dados Redis e é linkado com o container
+# node. Como o Redis não possui uma interface administrava, nenhuma porta
+# é exposta no host.
+redis:
+  build: ./docker/redis
+
+# O container 'rethinkdb' contém somente o banco de dados RethinkDB e é linkado
+# com o container 'node'. A interface administrativa é exposta na porta 8081.
+rethinkdb:
+  build: ./docker/rethinkdb
+  ports:
+    - "8081:8080"

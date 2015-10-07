@@ -1,0 +1,17 @@
+{
+  "name": "aloweb.v5rt",
+  "version": "5.0.0",
+  "description": "Aloweb - v5 real-time",
+  "repository": {
+  },
+  "dependencies": {
+    "redis"      : "^2.1.0",
+    "rethinkdb"  : "^2.1.1",
+    "express"    : "^4.13.3",
+    "body-parser": "^1.14.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "chai" : "^3.3.0"
+  }
+}

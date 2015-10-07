@@ -1,0 +1,7 @@
+node_modules
+.docker
+*.swo
+*.swp
+
+.data/redis/*
+.data/rethinkdb/*
