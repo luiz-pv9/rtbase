@@ -1,0 +1,7 @@
+{
+  "host": "rethinkdb",
+  "port": 28015,
+  "db": "rtbase",
+  "minPoolSize": 1,
+  "maxPoolSize": 12
+}

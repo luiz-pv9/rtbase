@@ -2,16 +2,20 @@
   "name": "rtbase",
   "version": "5.0.0",
   "description": "rtbase - realtime application scaffolding",
-  "repository": {
+  "scripts": {
+    "test": "mocha --recursive tests"
   },
+  "repository": {},
   "dependencies": {
-    "redis"      : "^2.1.0",
-    "rethinkdb"  : "^2.1.1",
-    "express"    : "^4.13.3",
-    "body-parser": "^1.14.1"
+    "ioredis": "^1.9.1",
+    "rethinkdb": "^2.1.1",
+    "express": "^4.13.3",
+    "body-parser": "^1.14.1",
+    "generic-pool": "^2.2.0"
   },
   "devDependencies": {
+    "chai": "^3.3.0",
     "mocha": "^2.3.3",
-    "chai" : "^3.3.0"
+    "supertest": "^1.1.0"
   }
 }
